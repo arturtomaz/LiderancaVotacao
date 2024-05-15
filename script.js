@@ -39,6 +39,7 @@ function fazerNovoCandidato() {
             candidatoAntesVotacao.querySelector('.vilaCandidatoAntesVotacao').innerHTML = `Vila: ${item.vila}`;
             candidatoAntesVotacao.querySelector('.apartamentoCandidatoAntesVotacao').innerHTML = `Apartamento: ${item.apartamento}`;
             candidatoAntesVotacao.querySelector('.nomeCandidatoAntesVotacao').innerHTML = `Nome: ${item.nome}`;
+
         
             c('.areaCandidatosAntesVotacao').append(candidatoAntesVotacao);
         })
@@ -57,13 +58,31 @@ function iniciarVotacao() {
     } else {
         c('.tudoColocarCandidatos').style.display = 'none'
         // Inserir template para votar
+        c('.areaCandidatosAntesVotacao').innerHTML = '';
 
-        
+        candidatosJson.map((item, index)=>{
+            let candidatoNaVotacao = c('.models .candidatoNaVotacao').cloneNode(true);
+            candidatoNaVotacao.querySelector('.numVotos').innerHTML = `Votos: ${item.votos}`
+            candidatoNaVotacao.querySelector('.vilaCandidatoNaVotacao').innerHTML = `Vila: ${item.vila}`;
+            candidatoNaVotacao.querySelector('.apartamentoCandidatoNaVotacao').innerHTML = `Apartamento: ${item.apartamento}`;
+            candidatoNaVotacao.querySelector('.nomeCandidatoNaVotacao').innerHTML = `Nome: ${item.nome}`;
+            candidatoNaVotacao.querySelector('.mais').innerHTML = `<img class="botao mais" src="https://www.pngall.com/wp-content/uploads/10/Plus-Symbol-Silhouette-PNG-Images.png" alt="+">`
+            candidatoNaVotacao.querySelector('.menos').innerHTML = `<img class="botao menos" src="https://cdn-icons-png.flaticon.com/512/7601/7601866.png" alt="-">`
+
+            c('.areaCandidatosNaVotacao').append(candidatoNaVotacao);
+            candidatoNaVotacao.querySelector('.mais').classList.add(`botao${index}`)
+            candidatoNaVotacao.querySelector('.menos').classList.add(`botao${index}`)
+        })
         }
     }
-
 )
 
+//Funções de Adicionar e Remover Votos
+c('.mais').addEventListener('click',
+function adicionarVoto() {
+    
+}
+)
 
 
 

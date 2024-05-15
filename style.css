@@ -63,3 +63,15 @@ main {
 .margin-right {
     margin-right: 20px;
 }
+
+
+.candidatoNaVotacao {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+}
+.candidatoNaVotacao .botao {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}

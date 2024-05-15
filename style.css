@@ -1,0 +1,65 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    background-color: #CCC;
+    padding: 20px;
+    padding-left: 40px;
+    margin-bottom: 15px;
+}
+main {
+    margin-left: 10px;
+}
+.models {
+    display: none;
+}
+
+.logo {
+    height: 100px;
+}
+
+.numberSemSeta::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.preencherVila , .preencherApartamento {
+    width: 200px;
+    height: 50px;
+    font-size: 40px;
+}
+.preencherNome {
+    width: 400px;
+    height: 50px;
+    font-size: 40px;
+}
+
+.colocarCandidatosArea {
+    display: flex;
+    flex-direction: row;
+}
+.colocarCandidatosArea label {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.botaoInserirCandidatos, .botaoIrVotacao {
+    width: 250px;
+    height: 50px;
+    font-size: 30px;
+    margin-top: 35px;
+    cursor: pointer;
+}
+
+.candidatoAntesVotacao {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+}
+.margin-right {
+    margin-right: 20px;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Votação para Síndico</title>
+    <link rel="icon"
+        href="https://media.licdn.com/dms/image/C4E0BAQE73zpsuLUFag/company-logo_200_200/0/1572856677755?e=2147483647&v=beta&t=DH_9it8tIEDcq8z13vtHuqpHuM50Dx1nQ81v76sWZhA" />
+</head>
+
+<body>
+    <header>
+        <img class="logo"
+            src="https://www.liderancacond.com.br/wp-content/themes/lideranca/images/layout/logo-lideranca.png" />
+        <!--<div class=""></div> -->
+    </header>
+    <main>
+        <h1>VOTAÇÃO PARA SÍNDICO</h1>
+        <div class="tudoColocarCandidatos">
+            <h2>Preencha os dados a seguir para inserir os candidatos.</h2>
+            <div class="colocarCandidatosArea">
+                <label>Vila/Bloco:
+                    <input type="number" class="numberSemSeta preencherVila"/>
+                </label>
+                <label>Apartamento:
+                    <input type="number" class="numberSemSeta preencherApartamento"/>
+                </label>
+                <label>Candidato:
+                    <input type="text" class="preencherNome"/>
+                </label>
+                <button class="botaoInserirCandidatos">Inserir candidato.</button>
+            </div><br/><br/>
+            <div class="models">
+                <div class="candidatoAntesVotacao">
+                    <div class="margin-right vilaCandidatoAntesVotacao">vila</div>
+                    <div class="margin-right apartamentoCandidatoAntesVotacao">ap</div>
+                    <div class="nomeCandidatoAntesVotacao">nome</div><br><br>
+                </div>
+            </div>
+            <div class="areaCandidatosAntesVotacao"> <!--COISAS SÃO PREENCHIDAS AQUI PELO MAP AO MOLDE DAQUI DE CIMA--> </div>
+            <button class="botaoIrVotacao">Iniciar votação</button>
+        </div>
+        <div class="tudoVotacaoArea">   
+            <div class="models">
+                <!--área de votação-->
+            <!-- EDITAR ISSO PARA USAR O MAP
+                <div class="candidatoAntesVotacao">
+                    <div class="margin-right vilaCandidatoAntesVotacao">vila</div>
+                    <div class="margin-right apartamentoCandidatoAntesVotacao">ap</div>
+                    <div class="nomeCandidatoAntesVotacao">nome</div><br><br>
+                </div>
+            -->
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script type="text/javascript" src="candidatos.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

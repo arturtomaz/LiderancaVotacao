@@ -59,19 +59,16 @@ function iniciarVotacao() {
         c('.tudoColocarCandidatos').style.display = 'none'
         // Inserir template para votar
         c('.areaCandidatosAntesVotacao').innerHTML = '';
+        
+        c('.preenchimentoNaVotacao').style.display = 'flex'
+        c('.tudoVotacaoArea h2').style.display = 'flex'
 
         candidatosJson.map((item, index)=>{
             let candidatoNaVotacao = c('.models .candidatoNaVotacao').cloneNode(true);
-            candidatoNaVotacao.querySelector('.numVotos').innerHTML = `Votos: ${item.votos}`
-            candidatoNaVotacao.querySelector('.vilaCandidatoNaVotacao').innerHTML = `Vila: ${item.vila}`;
-            candidatoNaVotacao.querySelector('.apartamentoCandidatoNaVotacao').innerHTML = `Apartamento: ${item.apartamento}`;
-            candidatoNaVotacao.querySelector('.nomeCandidatoNaVotacao').innerHTML = `Nome: ${item.nome}`;
-            candidatoNaVotacao.querySelector('.mais').innerHTML = `<img class="botao mais" src="https://www.pngall.com/wp-content/uploads/10/Plus-Symbol-Silhouette-PNG-Images.png" alt="+">`
-            candidatoNaVotacao.querySelector('.menos').innerHTML = `<img class="botao menos" src="https://cdn-icons-png.flaticon.com/512/7601/7601866.png" alt="-">`
+            candidatoNaVotacao.querySelector('.caixinha').value = `${index}`
+            candidatoNaVotacao.querySelector('.vilaApNomeNaVotacao').innerHTML = `${item.nome} (Vila: ${item.vila}, AP: ${item.apartamento})`
 
             c('.areaCandidatosNaVotacao').append(candidatoNaVotacao);
-            candidatoNaVotacao.querySelector('.mais').classList.add(`botao${index}`)
-            candidatoNaVotacao.querySelector('.menos').classList.add(`botao${index}`)
         })
         }
     }

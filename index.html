@@ -43,16 +43,26 @@
             <div class="areaCandidatosAntesVotacao"> <!--COISAS SÃO PREENCHIDAS AQUI PELO MAP AO MOLDE DAQUI DE CIMA--> </div>
             <button class="botaoIrVotacao">Iniciar votação</button>
         </div>
-        <div class="tudoVotacaoArea">   
+        <div class="tudoVotacaoArea">  
+            <h2>Preencha os campos com dados do votante.</h2>
+            <!--fazer área de preencher o votante-->
+            <div class="preenchimentoNaVotacao">
+                <label>Vila/Bloco:
+                    <input type="number" class="numberSemSeta preencherVila"/>
+                </label>
+                <label>Apartamento:
+                    <input type="number" class="numberSemSeta preencherApartamento"/>
+                </label>
+            </div>
             <div class="models">
                 <!--área de votação-->
                 <div class="candidatoNaVotacao">
-                    <div class="margin-right botao mais">+</div>
-                    <div class="margin-right botao menos">-</div>
-                    <div class="margin-right numVotos">numVotos</div>
-                    <div class="margin-right vilaCandidatoNaVotacao">vila</div>
-                    <div class="margin-right apartamentoCandidatoNaVotacao">ap</div>
-                    <div class="nomeCandidatoNaVotacao">nome</div><br><br>
+                    <label class="labelVotacao">
+                        <div class="margin-right checkbox-area">
+                            <input type="radio" name="votacao" class="caixinha desmarcado">
+                        </div>
+                        <div class="vilaApNomeNaVotacao">nome</div><br><br>
+                    </label>
                 </div>
             </div>
             <div class="areaCandidatosNaVotacao"> <!--COISAS SÃO PREENCHIDAS AQUI PELO MAP AO MOLDE DAQUI DE CIMA--> </div>
